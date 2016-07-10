@@ -1,0 +1,42 @@
+//The Question is:
+//Sample Input
+//4
+//1 4 3 2
+//Sample Output
+//2 3 4 1
+//Input Format
+//The first line of the input contains ,where  is the number of integers.The next line contains  integers separated by a space.
+//Output Format
+//Print the  integers of the array in the reverse order in a single line separated by a space.
+
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+int main() {
+    int temp = 0;
+    int arr[n];
+    int n;
+    
+    cin << n;
+    
+    for (int i = 0; i < n; i++) {
+        cin >> arr[n];
+    }
+    
+    temp = arr[0];
+    arr[0] = arr[1];
+    arr[1] = arr[2];
+    arr[2] = arr[3];
+    arr[3] = temp;
+    
+    cout << endl;
+    for (int i = 0; i < n; i++) {
+    cout << arr[i] << " ";
+    }
+    
+    return 0;
+}
