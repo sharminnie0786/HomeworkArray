@@ -40,3 +40,28 @@ int main() {
     
     return 0;
 }
+// As I haven't taught you how to declare an array dynamically, we'll go with the assumption that we know the array size beforehand
+
+#include <stdio.h>
+#include "iostream"
+#include "fstream"
+#include "ctime"
+
+using namespace std;
+
+int main(){
+    srand(time(0));
+    int size = 5,arr[5];
+    cout << " Now we are going to populate the array with random values" << endl;
+    for (int i = 0; i<size; i++) {
+        arr[i] = rand()%100;
+        cout << arr[i] << " ";
+    }
+    cout << endl << "Now comes the output part " << endl;
+    for (int i = size-1; i>=0; i--) {
+        cout << arr[i] << " ";
+    }
+    return 0;
+}
+
+
